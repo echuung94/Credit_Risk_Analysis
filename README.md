@@ -1,9 +1,9 @@
 # Credit_Risk_Analysis
 
-## Overview of the analysis: Explain the purpose of this analysis.
+## Overview of the analysis:
 The purpose of this assignment was to employ different techniques to train and evaluate models with unblanced classes. We were to use imbalanced-learn and scikit-learn libraries to build and evalute models using resampling. Using the credit card dateset, we oversampled the data using the RandomOverSampler and SMOTE algorithms and undersampled the data using the ClusterCentroids algorithm. We then used a combinatorial approach of over- and undersampling using the SMOTEENN algorithm. We were then tasked to compare two new machine learning models that reduce bias, BalancedRandomForestClassifier and EasyEnsembleClassifier, to predict credit risk. 
 
-## Results: Using bulleted lists, describe the balanced accuracy scores and the precision and recall scores of all six machine learning models. Use screenshots of your outputs to support your results.
+## Results: 
 
 ### Naive Random Oversampling
 ![naive_accuracy](https://github.com/echuung94/Credit_Risk_Analysis/blob/main/Resources/naive_accuracy.png)
@@ -47,5 +47,5 @@ The purpose of this assignment was to employ different techniques to train and e
 - The high risk population shows a precision of 7% with 91% sensitivity. 
 - The low risk population shows 100% with 94% sensitivity. 
 
-## Summary: Summarize the results of the machine learning models, and include a recommendation on the model to use, if any. If you do not recommend any of the models, justify your reasoning.
+## Summary: 
 The models that were used to perform the credit risk analysis all resulted in a weak precision score in determining if a credit risk is high. Compared to the other models, the Ensemble classifier models showed a higher precision and sensitivity score. The EasyEnsemble resulted in a sensitivity score of 91% for the high risk population, which is a more useful model in detecting all high risk credit. Although the EasyEnsemble Classifier model, shows the highest level of sensitivity, I would still not recommend any of the models to be used due to the low precision scores. With the low precision levels, many of the lower risk credits are detected as high risk credit which could deter the bank's ability to predict credit risk accurately. 
